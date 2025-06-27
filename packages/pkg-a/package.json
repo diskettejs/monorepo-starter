@@ -1,0 +1,25 @@
+{
+  "name": "pkg-a",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "@repo/source": "./src/index.ts",
+      "default": "./dist/index.js"
+    },
+    "./components": {
+      "@repo/source": "./src/components/index.ts",
+      "default": "./dist/components/index.js"
+    },
+    "./components/*": {
+      "@repo/source": "./src/components/*.tsx",
+      "default": "./dist/components/*.js"
+    }
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist node_modules tsconfig.tsbuildinfo"
+  }
+}

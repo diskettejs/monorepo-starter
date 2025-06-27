@@ -1,0 +1,14 @@
+{
+  "name": "pkg-repo",
+  "private": "true",
+  "scripts": {},
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "typescript": "^5.8.3"
+  },
+  "packageManager": "pnpm@10.12.1",
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}
