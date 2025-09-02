@@ -1,0 +1,27 @@
+{
+  "name": "pkg",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "@repo/source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "vitest": "catalog:dev"
+  },
+  "scripts": {
+    "dev": "tsc --watch -p tsconfig.build.json",
+    "test": "vitest",
+    "build": "rm -rf && tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist node_modules tsconfig.tsbuildinfo",
+    "prepublishOnly": "pnpm build"
+  }
+}

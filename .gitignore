@@ -36,7 +36,6 @@ yarn-error.log*
 *.pem
 
 packages/**/playground/
-.vscode
 .npmrc
 
 tsconfig.tsbuildinfo
