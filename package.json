@@ -5,7 +5,8 @@
     "build": "pnpm --filter \"./packages/**\" build",
     "typecheck": "pnpm --filter \"./packages/**\" typecheck",
     "lint": "oxlint --type-aware ./packages",
-    "test": "pnpm --filter \"./packages/**\" test"
+    "test": "pnpm --filter \"./packages/**\" test",
+    "clean": "pnpm --filter \"./packages/**\" clean"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.7",

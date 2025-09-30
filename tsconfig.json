@@ -5,22 +5,22 @@
     "verbatimModuleSyntax": true,
     "erasableSyntaxOnly": true,
     "rewriteRelativeImportExtensions": true,
-    "customConditions": [
-      "@repo/source"
-    ],
-    "lib": [
-      "ESNext",
-      "DOM"
-    ],
+
+    "customConditions": ["@repo/source"],
+    "lib": ["ESNext", "DOM"],
     "target": "ESNext",
     "module": "nodenext",
     "moduleResolution": "nodenext",
     "moduleDetection": "force",
+
     "strict": true,
     "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
     "noImplicitOverride": true,
     "allowJs": true,
     "skipLibCheck": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+
+    "rootDir": "${configDir}/src"
   }
 }
