@@ -19,8 +19,6 @@
     "noImplicitOverride": true,
     "allowJs": true,
     "skipLibCheck": true,
-    "jsx": "preserve",
-
-    "rootDir": "${configDir}/src"
+    "jsx": "preserve"
   }
 }
