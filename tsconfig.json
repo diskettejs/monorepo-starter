@@ -5,9 +5,10 @@
     "verbatimModuleSyntax": true,
     "erasableSyntaxOnly": true,
     "rewriteRelativeImportExtensions": true,
+    "noEmit": true,
 
     "customConditions": ["@repo/source"],
-    "lib": ["ESNext", "DOM"],
+    "lib": ["ESNext"],
     "target": "ESNext",
     "module": "nodenext",
     "moduleResolution": "nodenext",
@@ -17,7 +18,7 @@
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
     "noImplicitOverride": true,
-    "allowJs": true,
+
     "skipLibCheck": true,
     "jsx": "preserve"
   }

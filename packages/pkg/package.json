@@ -9,18 +9,15 @@
     }
   },
   "sideEffects": false,
-  "files": [
-    "dist"
-  ],
-  "dependencies": {
-    "vitest": "catalog:dev"
-  },
-  "scripts": {
-    "dev": "tsc --watch -p tsconfig.build.json",
+    "scripts": {
+    "dev": "tsc --watch -p tsconfig.build.json --declarationMap --sourceMap",
     "test": "vitest",
-    "build": "rm -rf && tsc -p tsconfig.build.json",
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf dist node_modules tsconfig.tsbuildinfo",
     "prepublishOnly": "pnpm build"
-  }
+  },
+  "devDependencies": {
+    "vitest": "catalog:dev",
+    "typescript": "catalog:dev"}
 }
